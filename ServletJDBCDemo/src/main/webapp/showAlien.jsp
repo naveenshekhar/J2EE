@@ -6,9 +6,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body bgcolor="gray">
+<body bgcolor="pink">
 
-In show JSP 
+<%
+
+%>
 
 </body>
 </html>
