@@ -15,7 +15,7 @@ import com.java.web.model.Alien;
  * Servlet implementation class GetAlienController
  */
 public class GetAlienController extends HttpServlet {
-	
+
 	/**
 	 * 
 	 */
