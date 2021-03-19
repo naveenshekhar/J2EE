@@ -27,9 +27,12 @@ public class GetAlienController extends HttpServlet {
 		int aid = Integer.parseInt(request.getParameter("aid"));
 
 		AlienDao dao = new AlienDao();
-
+//Getting the data from dao and storing it in a1 Alien object
 		Alien a1 = dao.getAlien(aid);
-
+		
+//Adding data in request object so that it can carry forward  the data to jsp page
+		request.setAttribute("alien", a1);
+		
 //Calling jsp from servlet		
 		RequestDispatcher rd = request.getRequestDispatcher("showAlien.jsp");
 		rd.forward(request, response);
